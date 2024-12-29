@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	
+	<title>19.5:9 Full Page Aspect Ratio</title>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+		.aspect-ratio-page {
+            aspect-ratio: 19.5 / 9;
+			width: 430px;
+            height: auto;
+        }
+		
+		 /* Container for the popup bubble */
+        .popup {
+            position: relative;
+            display: inline-block;
+        }
+
+        /* The actual popup bubble (hidden by default) */
+        .popup .popuptext {
+            visibility: hidden;
+            width: 160px;
+            background-color: #555;
+            color: #fff;
+            text-align: center;
+            border-radius: 6px;
+            padding: 10px;
+            position: absolute;
+            z-index: 1;
+            bottom: 125%; /* Position above the button */
+            left: 50%;
+            margin-left: -80px;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        /* Arrow for the popup */
+        .popup .popuptext::after {
+            content: "";
+            position: absolute;
+            top: 100%; /* Bottom of the popup */
+            left: 50%;
+            margin-left: -5px;
+            border-width: 5px;
+            border-style: solid;
+            border-color: #555 transparent transparent transparent;
+        }
+
+        /* Show the popup when the button is clicked */
+        .popup .show {
+            visibility: visible;
+            opacity: 1;
+        }
+		
+		.popup img {
+            display: block;
+            margin: 0px auto 0; /* Add margin to separate the image from the text */
+            max-width: 100%; /* Ensure the image fits within the popup */
+            height: auto; /* Maintain aspect ratio */
+        }
+    </style>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>TAG Web App</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- CSS Files -->
+  <link href="assets/css/bootstrap-datepicker.css" rel="stylesheet">
+  <link href="assets/css/bootstrap-datepicker.min.css" rel="stylesheet">
+  <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/css/font-awesome.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+  <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+</head>
+
+<body>
+	
+	<div class="aspect-ratio-page">
+
+
+  <div class="home-page-swipe owl-carousel owl-theme">
+
+    <div class="item" >
+      <header class="bg-info">
+        <div class="container">
+          <div class="row">
+           <div class="col-12 py-3">
+            <a data-bs-toggle="modal" data-bs-target="#shownameModal" >
+              <h5 class="text-white text-center mb-0">Elon Musk</h5>
+            </a>
+           </div> 
+        </div>
+        </div>
+      </header>
+      <main>
+        <section>
+          <div class="container">
+    
+            <div class="row justify-content-center  mt-4">
+              <div class="col-6">
+              <a href="story-private.html"><img src="Quote 2/Quote 2 attach/elonmusk-story.png" class="w-100" alt=""></a> </div>
+              <div class="col-6">
+                <div class="row">
+                    <div class="col-6 text-center">
+                        <a href="website.html"> <img src="assets/img/global.png" class="w-100" alt=""></a>
+                        <p class="fs-02 mt-1 mb-1">Website</p>
+                    </div>
+                    <div class="col-6 text-center">
+                        <a href="newsletter.html"> <img src="assets/img/newssletter.png" class="w-100" alt=""></a>
+                        <p class="fs-02 mt-1 mb-1">Newsletter</p>
+                    </div>
+                    <div class="col-6 text-center">
+                      <a href="calendar.html"> 
+                      <div class=" position-relative ">
+                        <div class="position-absolute custome-cal">
+                            <h5 class="text-center mb-0">April, 18th&nbsp;</h5>
+                            <h5 class="text-center mb-0">2023</h5>
+                       </div>
+                       <img src="assets/img/green-cal.png" class="w-100" alt="">
+                        </div>
+                      </a>
+                        <p class="fs-02 mt-1 mb-1">Calendar</p>
+        
+                    </div>
+                    <div class="col-6 text-center">
+                        <a href="private-link.html"> <img src="assets/img/link.png" class="w-100" alt=""></a>
+                        <p class="fs-02 mt-1 mb-1">Links</p>
+                    </div>
+                </div>
+              </div>
+          
+            </div>
+    
+          </div>
+        </section>
+    
+        <section>
+            <div class="container">
+              <div class="row">
+                <div class="col-3 mt-4 text-center d-flex flex-column">
+                    <a href="https://www.facebook.com/groups/ElonMusk/about"><img src="assets/img/fb.png" class="img-fluid" alt=""></a>
+                  <p class="fs-02 mt-1 mb-1">Facebook</p>
+                </div>
+                <div class="col-3 mt-4 text-center d-flex flex-column">
+                    <a href="https://www.linkedin.com/company/tesla-motors/"><img src="assets/img/in.png" class="img-fluid" alt=""></a>
+                  <p class="fs-02 mt-1 mb-1">Linkedin</p>
+                </div>
+                <!-- <div class="col-3 mt-4 text-center d-flex flex-column">
+                    <a href="javascript:history.back()"><img src="assets/img/g+.png" class="img-fluid" alt=""></a>
+                  <p class="fs-02 mt-1 mb-1">Google+</p>
+                </div> -->
+                <div class="col-3 mt-4 text-center d-flex flex-column">
+                    <a href="https://x.com/elonmusk?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><img src="assets/img/tw.png" class="img-fluid" alt=""></a>
+                  <p class="fs-02 mt-1 mb-1">X</p>
+                </div>
+                <div class="col-3 mt-4 text-center d-flex flex-column">
+                    <a href="https://www.instagram.com/"><img src="assets/img/insta.png" class="img-fluid" alt=""></a>
+                  <p class="fs-02 mt-1 mb-1">Instagram</p>
+                </div>
+                <div class="col-3 mt-4 text-center d-flex flex-column">
+                    <a href="https://in.pinterest.com/"><img src="assets/img/pint.png" class="img-fluid" alt=""></a>
+                    <p class="fs-02 mt-1 mb-1">Pinterest</p>
+                  </div>
+                <div class="col-3 mt-4 text-center d-flex flex-column">
+                  <a href="https://www.youtube.com/"><img src="assets/img/you.png" class="img-fluid" alt=""></a>
+                  <p class="fs-02 mt-1 mb-1">YouTube</p>
+                </div>
+                <!-- <div class="col-3 mt-4 text-center d-flex flex-column">
+                  <a href="javascript:history.back()"><img src="assets/img/blog.png" class="img-fluid" alt=""></a>
+                  <p class="fs-02 mt-1 mb-1">Blogger</p>
+                </div> 
+                <div class="col-3 mt-4 text-center d-flex flex-column">
+                    <a href="javascript:history.back()"><img src="assets/img/viv.png" class="img-fluid" alt=""></a>
+                  <p class="fs-02 mt-1 mb-1">Vivino</p>
+                </div>
+                <div class="col-3 mt-4 text-center d-flex flex-column">
+                    <a href="javascript:history.back()"><img src="assets/img/tr.png" class="img-fluid" alt=""></a>
+                  <p class="fs-02 mt-1 mb-1">Tumblr</p>
+                </div>-->
+                <div class="col-3 mt-4 text-center d-flex flex-column">
+                  <a data-bs-toggle="modal" data-bs-target="#exampleModal"><img src="assets/img/pp.png" class="w-100"
+                    alt=""></a>
+<p class="fs-02 mt-1 mb-1">PayPal</p>
+                </div>
+                <div class="col-3 mt-4 text-center d-flex flex-column">
+                  <a href="shared-files.html">
+                    <img src="assets/img/drop.png" class="img-fluid" alt=""></a>
+                  <!-- <div class="image-upload">
+                    <label for="file-input">
+                    </label>
+                    <input id="file-input" type="file" />
+                  </div> -->
+                  <p class="fs-02 mt-1 mb-1">Dropbox</p>
+                </div>
+              </div>
+            </div>
+          </section>
+    
+        <section class="bottom-menu">
+            <footer>
+                <div class="container">
+                    <div class="row align-items-center justify-content-center">
+                        <div class="col-items text-center">
+                            <a href="call.html" class="text-center align-items-center flex-column d-flex mb-15">
+                              <img src="assets/img/call.png" alt="" class="w-50">
+                              Call
+                            </a>
+                        </div>
+                        <div class="col-items text-center">
+                            <a href="https://www.whatsapp.com/" class="align-items-center text-center flex-column d-flex mb-15">
+                            <!-- <a href="/" class="align-items-center text-center flex-column d-flex"> -->
+                                <img src="assets/img/wp.png" alt="" class="w-50">
+                                WhatsApp
+                            </a>
+                        </div>
+                       <div class="col-items text-center popup">
+						<a class="align-items-center text-center flex-column d-flex mb-15" onclick="togglePopup()">
+							<span class="popuptext" id="myPopup">Voice call<br><br>Video call
+							<img src="assets/img/skype.png" alt="" class="w-50">
+							</span>
+							<img src="assets/img/skype.png" alt="" class="w-50">
+							Skype
+						   </a>
+						</div>
+                        <div class="col-items text-center"> 
+                            <a href="mail.html" class="align-items-center text-center flex-column d-flex mb-15">
+                                <img src="assets/img/mail.png" alt="" class="w-50">
+                                Mail
+                            </a>
+                        </div>
+                       
+                    </div>
+                </div>
+            </footer>
+        </section>
+    
+      </main>
+    </div>
+
+    <div class="item" >
+      <header class="bg-info">
+        <div class="container">
+          <div class="row">
+           <div class="col-12 py-3">
+            <h5 class="text-white text-center mb-0">Feed</h5>
+           </div> 
+        </div>
+        </div>
+      </header>
+      <main>
+        <section>
+          <div class="container">
+            <div class="row justify-content-center  mt-4">
+              <div class="col-2">
+                <img src="assets/img/fb-feed.png" alt="" class="w-100">
+                <img src="assets/img/elonmusk.jpg" alt="" class="w-100 mt-3">
+                <img src="assets/img/fb-feed-link.png" alt="" class="w-100 mt-3">
+                <img src="assets/img/fb-add-user.png" alt="" class="w-100 mt-3">
+              </div>
+              <div class="col-10">
+                <div class="fb-border p-2">
+                  <img src="assets/img/fb-feed-img.jpg" class="w-100 mb-2" alt="">
+                  <p class="mb-1 text-white">Beautiful Sunset</p>
+                </div>
+              </div>
+            </div>
+            <div class="row justify-content-center  mt-4">
+              <div class="col-2">
+                <img src="assets/img/twet-feed.png" alt="" class="w-100">
+                <img src="assets/img/elonmusk.jpg" alt="" class="w-100 mt-3">
+                <img src="assets/img/twet-feed-like.png" alt="" class="w-100 mt-3">
+                <img src="assets/img/twet-feed-follow.png" alt="" class="w-100 mt-3">
+              </div>
+              <div class="col-10">
+                <div class="twet-border p-2">
+                 <p class="mb-1 text-white">Imagination Is more important then knowledge. For knowledge is limited to all we know now and understand, while imagination embraces the entire world, and all there ever will be to know and understand.</p>
+                 <p class="mb-0 mt-2 text-white fw-bold">#alberteinstein #healthythoughts #brainyquote</p>
+                </div>
+              </div>
+            </div>
+            <div class="row justify-content-center  mt-4">
+              <div class="col-2">
+                <img src="Quote 2/Quote 2 attach/linkedinlogo.png" alt="" class="w-100">
+                <img src="assets/img/elonmusk.jpg" alt="" class="w-100 mt-3">
+                <img src="Quote 2/Quote 2 attach/linkedinlike.png" alt="" class="w-100 mt-3">
+                <img src="Quote 2/Quote 2 attach/linkedinfollow2.png" alt="" class="w-100 mt-3">
+              </div>
+              <div class="col-10">
+                <div class="insta-border p-2">
+                  <img src="Quote 2/Quote 2 attach/Linkedin.png" class="w-100 mb-2" alt="">
+                  <p class="mb-0">Join the Tesla Team.</p>
+					<p class="mb-7" href="https://www.tesla.com/careers/search/?site=BR">https://lnkd.in/g3MWE6Z&nbsp;</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+    
+      </main>
+    </div>
+
+    <div class="item" >
+      <header class="bg-info">
+        <div class="container">
+          <div class="row">
+           <div class="col-12 py-3">
+            <h5 class="text-white text-center mb-0">About</h5>
+           </div> 
+        </div>
+        </div>
+      </header>
+      <main>
+        <section>
+          <div class="container">
+            <div class="row justify-content-center  mt-4">
+              <div class="col-12">
+                <p class="mb-11">"The biggest risk is not taking any risk. In a world that is changing quickly, the only strategy that is guaranteed to fail is not taking risks."</p>
+              </div>
+              <div class="col-12">
+                <p class="mb-11 text-end fw-bold">- Elon Musk</p>
+              </div>
+              <div class="col-12 mt-4">
+                <table class="table bg-light">
+                    <thead>
+                      <tr>
+                        <th scope="col">Birth date:</th>
+                        <td class="text-end">June 28th 1971 (age 53)</td>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">Career:</th>
+                        <td class="text-end">University of Pennsylvania (PA)</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Work address:</th>
+                        <td class="text-end">1 Tesla Road <br/> Austin, TX 78725</td>
+                      </tr>
+                    </tbody>
+                  </table>
+              </div>
+            </div>
+    
+          </div>
+        </section>
+    
+      </main>
+    </div>
+
+  </div>
+
+
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Send Money</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div>
+              <label for="recipient-name" class="w-100"><em class="mb-10">Donate to charities we support.</em></label>
+				<label for="recipient-name2" class="col-form-label"><em class="mb-3">Amount:</em></label>
+<input type="text" class="form-control" id="recipient-name">
+            </div>
+            <div class="mb-3">
+              <label for="message-text" class="col-form-label">Description:</label>
+              <textarea class="form-control" id="message-text"></textarea>
+            </div>
+            <div class="mb-3">
+              <a href="https://www.paypal.com/. " class="text-primary">More...&nbsp;⤤</a>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-info">Send</button>
+        </div>
+      </div>
+    </div>
+  </div>
+<div class="modal fade" id="shownameModal" tabindex="-1" aria-labelledby="shownameLabel" aria-hidden="true">
+  <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="shownameLabel"></h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label for="recipient-name" class="col-form-label">Full Name</label>
+              <h6><b>Elon Reeve Musk</b></h6>
+            </div>
+            <div class="mb-3">
+              <label for="message-text" class="col-form-label">Tag ID</label>
+              <h6><b>=elonmusk</b></h6>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ======= End Main ======= -->
+
+  <!-- JS Files -->
+  <script src="assets/js/jquery-3.6.0.js"></script>
+  <script src="assets/js/popper.min.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
+  <script src="assets/js/bootstrap-datepicker.js"></script>
+  <script src="assets/js/bootstrap-datepicker.min.js"></script>
+  <script src="assets/js/owl.carousel.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+  <script>
+    jQuery(document).ready(function ($) {
+      $('.home-page-swipe').owlCarousel({
+        items: 1,
+        loop: false,
+        margin: 10,
+        nav: false,
+        dots: true,
+      });
+    })
+  </script>
+
+		<script>
+    // Function to toggle the popup
+    function togglePopup() {
+        var popup = document.getElementById("myPopup");
+        popup.classList.toggle("show");
+    }
+</script>
+		
+	</div>
+</body>
+
+</html>

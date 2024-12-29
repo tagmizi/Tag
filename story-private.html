@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	
+	<title>19.5:9 Full Page Aspect Ratio</title>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+		.aspect-ratio-page {
+            aspect-ratio: 19.5 / 9;
+			width: 430px;
+            height: auto;
+        }
+    </style>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>TAG Web App</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- CSS Files -->
+  <link href="assets/css/bootstrap-datepicker.css" rel="stylesheet">
+  <link href="assets/css/bootstrap-datepicker.min.css" rel="stylesheet">
+  <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/css/font-awesome.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="aspect-ratio-page">
+		
+  <header class="bg-dark"> </header>
+
+  <main>
+
+    <section>
+      <div class="container">
+        
+<div class="col-12 mt-1"><img src="Quote 2/Quote 2 attach/Story.jpeg" alt="" class="w-100"> </div>
+<div id="progress-container">
+    <div id="progress-bar"></div>
+  </div>
+			</div>
+    </section>
+
+  </main>
+  <!-- ======= End Main ======= -->
+
+  <!-- JS Files -->
+   <style>
+    #progress-container {
+      width: 100%;
+      background-color: #f0f0f0;
+    }
+
+    #progress-bar {
+      width: 0;
+      height: 10px;
+      background-color: #4CAF50; /* Green color for the progress bar */
+    }
+  </style>
+<script>
+    // Wait for 3 seconds and then go back to the previous page
+    let progressBar = document.getElementById("progress-bar");
+    let width = 0;
+    let interval = 10; // Milliseconds for the progress update
+    let duration = 2000; // 3000 milliseconds (3 seconds)
+
+    let timer = setInterval(function() {
+      if (width >= 100) {
+        clearInterval(timer);
+        history.back();
+      } else {
+        width += (interval / duration) * 100;
+        progressBar.style.width = width + "%";
+      }
+    }, interval);
+  </script>
+<script src="assets/js/jquery-3.6.0.js"></script>
+  <script src="assets/js/popper.min.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
+  <script src="assets/js/bootstrap-datepicker.js"></script>
+  <script src="assets/js/bootstrap-datepicker.min.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+	</div>
+</body>
+
+</html>
+ 
