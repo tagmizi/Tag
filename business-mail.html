@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	
+	<title>19.5:9 Full Page Aspect Ratio</title>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+		.aspect-ratio-page {
+            aspect-ratio: 19.5 / 9;
+			width: 430px;
+            height: auto;
+        }
+    </style>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>TAG Web App</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- CSS Files -->
+  <link href="assets/css/bootstrap-datepicker.css" rel="stylesheet">
+  <link href="assets/css/bootstrap-datepicker.min.css" rel="stylesheet">
+  <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/css/font-awesome.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+<style>
+        #ordernumber::placeholder {
+            font-style: italic;
+        }
+</style>
+<style>
+        #charInput::placeholder {
+            font-style: italic;
+        }
+</style>
+<style>
+        .input-box {
+            border: 1px solid #ccc;
+            padding: 10px;
+            width: 0 auto; /* Adjust the width as needed */
+			margin: 0 auto; /* Center the box horizontally */
+        }
+        .input-box textarea {
+            width: 100%;
+			box-sizing: border-box;
+            padding: 5px;
+        }
+    </style>
+</head>
+
+<body>
+<script>
+        function updateCharCount() {
+            var inputField = document.getElementById("charInput");
+            var charCount = document.getElementById("charCount");
+            var maxLength = 400; // Maximum character limit
+
+            var remainingChars = maxLength - inputField.value.length;
+            charCount.textContent = remainingChars + " characters left";
+        }
+    </script>
+  <div class="aspect-ratio-page">
+	<header class="bg-dark">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 cssdiv" >
+          <a href="javascript:history.back()" class="text-white ms-2 po-a" >  &lt; Back</a>
+        <h5 class="text-white csstitle">Messages</h5>
+       </div> 
+    </div>
+    </div>
+  </header>
+
+
+
+
+  <main>
+
+    <section>
+      <div class="container">
+        <div class="row align-items-center">
+<div class="col-12 d-flex justify-content-center py-3" >
+  <h5 class="text-center"><a class="text-primary" href="faq.html">FAQ&gt;</a></h5>
+</div>
+        </div>
+       <head>
+    <title>Dropdown Picklist Example</title>
+    <style>
+        .center-row {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="center-row">
+<p><select id="topics" name="">
+            <option value="apple">Select topic</option>
+	  <option value="apple">Online orders</option>
+            <option value="banana">Returns & refunds</option>
+            <option value="cherry">Account & payments</option>
+            <option value="date">Feedback</option>
+			</select></p>
+</div>
+    <div class="input-container center-row">
+      <input type="text" name="ordernumber" id="ordernumber" placeholder="Order number">
+		<p></p>
+    </div>
+</body>
+<div class="row align-items-center border-bottom pb-3 input-box">
+<textarea type="text" name="charInput" id="charInput" oninput="updateCharCount()" placeholder="Type here..." rows=10></textarea>
+<p class="mb-14" id="charCount">400 characters left</p>
+</div>
+<div class="center-row py-3">
+  <button class="btn btn-info">Send</button>
+</div>
+</div>
+    </section>
+
+  </main>
+  <!-- ======= End Main ======= -->
+
+  <!-- JS Files -->
+<script src="assets/js/jquery-3.6.0.js"></script>
+<script src="assets/js/popper.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/bootstrap-datepicker.js"></script>
+<script src="assets/js/bootstrap-datepicker.min.js"></script>
+
+  <!-- Template Main JS File -->
+<script src="assets/js/main.js"></script>
+
+	</div>
+</body>
+
+</html>
